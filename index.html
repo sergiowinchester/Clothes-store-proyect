@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Clothes store</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="icons/favicom.svg" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/media-mobile.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/media-tablet.css'>
+    <link rel="stylesheet" type='text/css' href="css/normalize.css">
+</head>
+<body>
+
+    <header class="hero">
+        <!-- nav1= <nav class="nav container">
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                  <a href="#" class="nav__links">About us</a>
+                </li>
+
+                <li class="nav__items">
+                  <a href="#" class="nav__links">Collections</a>
+                </li>
+
+                <li class="nav__items">
+                  <a href="#" class="nav__links">Collab</a>
+                </li>
+
+                <li class="nav__items">
+                  <a href="#" class="nav__links">Contact</a>
+                </li>
+
+                <img src="icons/close.svg" alt="close button" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="icons/menu.svg" alt="open menu button" class="nav__img">
+            </div>
+        </nav> -->
+        <!-- nav2 -->
+        <nav class="topnav wrapper" role="dialog">
+          <h2 class="topnav__title">Clothes store</h2>
+          <span id="nav-label" hidden>Navigation</span>
+          <button class="topnav__open" id="btnOpen" aria-expanded="false" aria-labelledby="nav-label">
+            <img src="icons/menu.svg" alt="">
+          </button>
+          <div class="topnav__menu"  aria-labelledby="nav-label">
+            <button class="topnav__close" id="btnClose">
+              <img src="icons/close.svg" alt="">
+            </button>
+            <ul class="topnav__links">
+              <li class="topnav__item"><a href="/" class="topnav__link">About us</a></li>
+              <li class="topnav__item"><a href="/" class="topnav__link">Collections</a></li>
+              <li class="topnav__item"><a href="/" class="topnav__link">Collab</a></li>
+              <li class="topnav__item"><a href="/" class="topnav__link">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title">Clothes for mens</h1>
+
+            <p class="hero__paragraph"> Lorem, ipsum dolor sit amet consectetur dipisicing elit. Saepe, quia eum harum repudiandae, incidunt ratione atque impedit reprehenderit, numquam recusandae voluptate
+             maxime soluta facilis sint libero consequuntur pariatur est totam?
+            </p>
+             
+            <button class="hero__button button">
+              <a href="#" class="hero__lik">Nuestros productos</a>
+            </button>
+            
+        </section>
+    </header>
+
+    <main>
+      <section class="about container">
+        <h2 class="subtitle">How we works</h2>
+        <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequatur quia, soluta suscipit veniam iusto nostrum perspiciatis est ex.</p>
+
+        <div class="about__main">
+          <article class="about__card">
+            <img src="icons/security.svg" class="about__icon" alt="security icon">
+            <h3 class="about__title">Garanty Of Quality</h3>
+            <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+          <article class="about__card">
+            <img src="icons/deliver.svg" class="about__icon" alt="security icon">
+            <h3 class="about__title">Fast Deliver</h3>
+            <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+          <article class="about__card">
+            <img src="icons/message.svg" class="about__icon" alt="security icon">
+            <h3 class="about__title">Chat Whit Us</h3>
+            <p class="about__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </article>
+        </div>    
+      </section>
+
+      <section class="collection">
+        <div class="collection__container container">
+
+          <div class="collection__text">
+            <h2 class="collection__subtitle">Our new winter collection</h2>
+            <p class="collection__paragraph">
+              Lorem, ipsum dolor sit amet consectetur elit. Temporibus illumeos molestiae nobis numquam excepturidolore corporis reiciendis modi
+              vero esse incidunt quam atque asperiores, architectotempora fugit id iusto?
+            </p>
+            <a href="#" class="button">Click to see more</a>
+          </div>
+          
+          <div class="collection__slider">
+            <div class="collection__arrow">
+              <img src="icons/arrow_back2.svg" class="arrow__collection collection__arrow-back" id="back2" alt="">
+              <img src="icons/arrow_next2.svg" class="arrow__collection collection__arrow-next" id="next2" alt="">
+            </div>
+            <figure class="collection__picture collection__picture--show" data-id="1">
+              <img src="images/product_1.jpg" class="collection__img" alt="sample image">
+            </figure>
+            <figure class="collection__picture" data-id="2">
+              <img src="images/product_2.jpg" class="collection__img" alt="sample image">
+            </figure>
+            <figure class="collection__picture" data-id="3">
+              <img src="images/product_3.jpg" class="collection__img" alt="sample image">
+            </figure>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="testimony container">
+        <div class="testimony__title">
+          <h2  class="subtitle">Clients</h2>
+        </div>
+        <div class="testimony__container container">
+
+          <img src="icons/arrow_back.svg" alt="arrow_back" class="testimony__arrow" id="back">
+
+          <section class="testimony__body testimony__body--show" data-id="1">
+            <div class="testimony__text">
+              <h2 class="testimony__subtitle">Leonardo Dicaprio </h2>
+              <p class="testimony__profession">Actor</p>
+              <p class="testimony__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident eveniet quia nisi enim sit dicta voluptate vel quo ducimus dolores ab natus, quam deserunt aliquid optio laborum. Dignissimos, quas.</p>
+            </div>
+            <figure class="testimony__picture">
+              <img src="images/cliente1-leo.jpg" class="testimony__img" alt="leo dicaprio picture">
+            </figure>
+          </section>
+          <!--Second testimony code-->
+          <section class="testimony__body" data-id="2">
+            <div class="testimony__text">
+              <h2 class="testimony__subtitle">Jhonny Deep</h2>
+              <p class="testimony__profession">Actor</p>
+              <p class="testimony__paragraph">Lorem ipsum dolor, sit. aliquid optio laborum. Dignissimos, quas.</p>
+            </div>
+            <figure class="testimony__picture">
+              <img src="images/cliente2-jhony.jpg" class="testimony__img" alt="Jhonny Deep picture">
+            </figure> 
+          </section>
+          <!--Thirdty testymony code-->
+          <section class="testimony__body" data-id="3">
+            <div class="testimony__text">
+              <h2 class="testimony__subtitle">Al Pacino</h2>
+              <p class="testimony__profession">Actor</p>
+              <p class="testimony__paragraph">Lorem ipsum dolor,Quisquam provident eveniet quia nisi enim sit dicta voluptate vel quo ducimus dolores ab natus, quam deserunt aliquid optio laborum. Dignissimos, quas.</p>
+            </div>
+            <figure class="testimony__picture">
+              <img src="images/cliente3-pacino.webp" class="testimony__img" alt="Al Paccino picture">
+            </figure>
+          </section> 
+
+          <img src="icons/arrow_next.svg" alt="arrow_next" class="testimony__arrow" id="next">
+        </div>
+      </section>
+
+      <section class="question container">
+        <h2 class="subtitle">Frequent questions</h2>
+        <p class="question__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. commodi soluta?</p>
+
+        <section class="question__container">
+          <article class="question__padding">
+            <div class="question__answer">
+              <h3 class="question__title">Pay methods
+                 <span class="question__arrow">
+                   <img src="icons/chevron-up.svg" alt="icon" class="question__img">
+                 </span>
+              </h3>
+              <p class="question__show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos id soluta voluptatem facilis ex consequatur quod quam earum possimus perspiciatis ipsa, non incidunt, molestiae eligendi animi, reprehenderit dolores quisquam labore!
+              Id illum quisquam voluptate optio qui accusantium iure earum animi possimus doloremque necessitatibus odit eum enim, ut temporibus consequuntur minus impedit rem iste quia, officia hic consequatur dolor doloribus? Illum?
+              </p>
+            </div>
+          </article>
+
+          <article class="question__padding">
+            <div class="question__answer">
+              <h3 class="question__title">Refunds for return items
+                 <span class="question__arrow">
+                   <img src="icons/chevron-up.svg" alt="icon" class="question__img">
+                 </span>
+              </h3>
+              <p class="question__show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos id soluta voluptatem facilis ex consequatur quod quam earum possimus perspiciatis ipsa, non incidunt, molestiae eligendi animi, reprehenderit dolores quisquam labore!
+              Id illum quisquam voluptate optio qui accusantium iure earum animi possimus doloremque necessitatibus odit eum enim, ut temporibus consequuntur minus impedit rem iste quia, officia hic consequatur dolor doloribus? Illum?Lorem ipsum dolor sit amet consectetur
+               adipisicing elit. Quos nam laborum molestias praesentium distinctio, quisquam id, vel dolor officiis aliquam laboriosam magnam voluptatum voluptas cum non nihil voluptatem tempora eaque?
+              </p>
+            </div>
+          </article>
+
+          <article class="question__padding">
+            <div class="question__answer">
+              <h3 class="question__title">Track Your Package
+                 <span class="question__arrow">
+                   <img src="icons/chevron-up.svg" alt="icon" class="question__img">
+                 </span>
+              </h3>
+              <p class="question__show">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos id soluta voluptatem facilis ex consequatur quod quam earum possimus perspiciatis ipsa, non incidunt, molestiae eligendi animi, reprehenderit dolores quisquam labore!
+              Id illum quisquam voluptate optio qui accusantium iure earum animi possimus doloremque necessitatibus odit eum enim, ut temporibus consequuntur minus impedit rem iste quia, officia hic consequatur dolor doloribus? Illum?
+              </p>
+            </div>
+          </article>
+        </section>
+
+      </section>
+
+      <footer>
+        <section class="footer__container container">
+
+          <nav class="nav--footer">
+            <h2 class="footer__title">Clothes for mens</h2>
+
+            <ul class="nav__link nav__link--footer">
+              <li class="nav__items">
+                <a href="#" class="nav__links">About us</a>
+              </li>
+
+              <li class="nav__items">
+                <a href="#" class="nav__links">Collections</a>
+              </li>
+
+              <li class="nav__items">
+                <a href="#" class="nav__links">Collab</a>
+              </li>
+
+              <li class="nav__items">
+                <a href="#" class="nav__links">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <form class="footer__form">
+            <h2 class="footer__suscribe">Suscribe to our email</h2>
+            <div class="footer__inputs">
+              <input type="email" name="emailInput" id="emailInput" class="footer__input" placeholder="email">
+              <input type="submit" value="Suscribe" class="footer__submit">
+            </div>
+          </form>
+        </section>
+        <section class="footer__copy container">
+          <div class="footer__socials">
+            <a class="footer__icons" href="#"><img class="footer__img" src="icons/X_icon.svg" alt=""></a>
+            <a class="footer__icons" href="#"><img class="footer__img" src="icons/instagram_icon.svg" alt=""></a>
+          </div>
+
+          <h3 class="footer__copyright">Conditions of Use
+            Privacy Notice
+            Consumer Health Data Privacy Disclosure
+            Your Ads Privacy Choices
+            © 1996-2024, clothesformen.com, Inc. or its affiliates</h3>
+        </section>
+      </footer>        
+    </main>
+
+<script src="js/slider.js"></script>
+<script src="js/sliderCollection.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
